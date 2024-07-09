@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+ </head>
+ <body background="background.jpg" style="background-repeat:no-repeat; background-size: 100% 100%;" onload="searchWeather('Paris')">
+    <div class="card">
+        <input type="text" id="search" placeholder="Search By Location " onkeydown="changeCity(event)" autocomplete="off">
+        <div>
+            <div class="city-country">
+                <h1>
+                    <span class="city"></span>
+                    <span class="country"></span>
+                </h1>
+            </div>
+            <div class="icon-deg">
+                <img src="" alt="Icon" class="icon">
+                <span class="temp"></span>
+                <sup class="deg">℃</sup>
+            </div>
+            <div class="des-wind">
+                <h3 class="description"></h3>
+                <p>Wind Speed: <sppan class="wind"></sppan></p>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+ </body>
+ </html>
